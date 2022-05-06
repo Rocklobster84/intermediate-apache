@@ -15,7 +15,7 @@ platforms:
   - name: centos-7
     driver:
       image: dokken/centos-7
-      priviliged: true
+      privileged: true
       pid_one_command: /usr/lib/systemd/systemd
       volumes:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro 
