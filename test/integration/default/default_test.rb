@@ -11,3 +11,7 @@ end
 describe command('curl http://localhost') do
   its(:stdout) { should match(/Welcome Home!/) }
 end
+
+describe file('/var/www/html/index.html') do
+  it { should exist }
+end
